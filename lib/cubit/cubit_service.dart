@@ -1,5 +1,5 @@
-import 'package:crypto_prices/models/crypto.dart';
-import 'package:crypto_prices/service/data_service.dart';
+import 'package:cryptotracker/models/crypto.dart';
+import 'package:cryptotracker/services/dataservice.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CryptoCubit extends Cubit<List<Crypto>> {
