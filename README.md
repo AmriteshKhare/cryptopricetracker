@@ -1,20 +1,16 @@
 # CryptoPriceTracker Documentation
 
 ## Introduction
-Welcome to the documentation for the CryptoPriceTracker GitHub repository. CryptoPriceTracker is an open-source cryptocurrency price tracking application developed using the Flutter framework. It utilizes various technologies such as BLoC state management, reusable UI components, the repository pattern, and optionally, an offline-first architecture. This documentation aims to provide an overview of the project structure, setup instructions, and key functionalities of the application.
+Welcome to the documentation for the CryptoPriceTracker GitHub repository. CryptoPriceTracker is an open-source cryptocurrency price tracking application developed using the Flutter framework. It utilizes various technologies such as BLoC state management, reusable UI components, the repository pattern. This documentation aims to provide an overview of the project structure, setup instructions, and key functionalities of the application.
 
 ## Repository Overview
 The CryptoPriceTracker repository contains the source code and related files for the application. Here is an overview of the repository structure:
 
 - `lib/`: This directory contains the main source code of the CryptoPriceTracker application.
-  - `models/`: Contains the data models used in the application.
-  - `blocs/`: Contains the BLoC (Business Logic Component) implementations for managing application state.
-  - `repositories/`: Contains the repository implementations responsible for data retrieval and caching.
-  - `ui/`: Contains the user interface components and screens of the application.
-  - `utils/`: Contains utility functions and helper classes used throughout the application.
+  - `cubit/`: Contains the cubit functionalities from flutter_bloc used in the application.
+  - `models/`: Contains the class model that is being parsed from the json data.
+  - `services/`: Contains the connection functionalities from coingecko server.
   - `main.dart`: The entry point of the application.
-
-- `assets/`: Contains static assets such as images and fonts used in the application.
 
 - `pubspec.yaml`: The configuration file for managing dependencies and assets used in the application.
 
@@ -47,16 +43,7 @@ To set up CryptoPriceTracker on your local machine, follow these steps:
 
 The CryptoPriceTracker application should now be up and running on your device or emulator/simulator.
 
-## Key Functionalities
-CryptoPriceTracker provides the following key functionalities:
-
-- **Live Price Tracking**: Real-time price updates for various cryptocurrencies.
-- **Detailed Cryptocurrency Information**: Comprehensive details on each listed cryptocurrency, including market cap, trading volume, and percentage change.
-- **Personalized Watchlist**: Ability to create and manage a personalized watchlist of favorite cryptocurrencies.
-- **Search Functionality**: Quick search feature to find specific cryptocurrencies by name or ticker symbol.
-- **Offline-First Architecture (Optional)**: Ability to access previously fetched cryptocurrency data even when offline.
-
-Feel free to explore the codebase and make modifications or enhancements as per your requirements. Contributions to the project are also welcome.
+Feel free to explore the codebase and make modifications or enhancements as per your requirements.
 
 ## Resources
 - Flutter Documentation: [https://flutter.dev/docs](https://flutter.dev/docs)
